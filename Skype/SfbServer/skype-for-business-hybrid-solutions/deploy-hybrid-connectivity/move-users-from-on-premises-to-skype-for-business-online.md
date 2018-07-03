@@ -70,7 +70,7 @@ Get-CsUser -Filter {UserProperty -eq "UserPropertyValue"} | Move-CsUser -Target 
 You can also use the -OU parameter to retrieve all users in the specified OU, as shown in the following example.
   
 ```
-Get-CsUser -OU "cn=hybridusers,cn=contoso.." | Move-CsUser -Target sipfed.online.lync.com -Credentials $creds 
+Get-CsUser -OU "cn=hybridusers,cn=contoso.." | Move-CsUser -Target sipfed.online.lync.com -Credential $creds 
 ```
 
 ## Verify online user settings and features
